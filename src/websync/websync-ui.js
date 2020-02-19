@@ -25,7 +25,7 @@ chrome.storage.local.get(function(storage) {
   tabs.TabGroupsList = Array;
 
   // view-model
-  tabs.vm = new function() {
+  tabs.vm = new (function() {
     var vm = {};
     vm.init = function() {
       // list of tab groups
@@ -54,7 +54,7 @@ chrome.storage.local.get(function(storage) {
       };
     };
     return vm;
-  }();
+  })();
 
   tabs.controller = function() {
     var i;
