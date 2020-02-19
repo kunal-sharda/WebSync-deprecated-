@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Websync",
+  "version": "1.0.0",
+  "description": "Websync is a free open-source OpenTab alternative that helps reduce tab clutter and memory usage by saving all your open tabs",
+  "icons": {
+    "128": "images/icon128.png",
+    "16": "images/icon16.png",
+    "48": "images/icon48.png"
+  },
+  "browser_action": {
+    "default_popup": "src/popup/popup.html",
+    "default_title": "Websync"
+  },
+  "background": {
+    "page": "src/Websync/websync.html",
+    "persistent": false
+  },
+  "options_page": "src/options/options.html",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "unlimitedStorage",
+    "chrome://favicon/",
+    "contextMenus"
+  ]
+}
