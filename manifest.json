@@ -10,10 +10,10 @@
   },
   "browser_action": {
     "default_popup": "src/popup/popup.html",
-    "default_title": "Websync"
+    "default_title": "websync"
   },
   "background": {
-    "page": "src/Websync/websync.html",
+    "page": "src/websync/websync.html",
     "persistent": false
   },
   "options_page": "src/options/options.html",

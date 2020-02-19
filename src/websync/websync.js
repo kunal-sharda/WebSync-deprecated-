@@ -93,7 +93,7 @@ function saveTabs(tabsArr) {
 }
 
 function saveAllTabs() {
-  const myUrl = chrome.extension.getURL('/src/Websync/websync.html');
+  const myUrl = chrome.extension.getURL('/src/websync/websync.html');
   chrome.tabs.query({ currentWindow: true }, function(tabsArr) {
     const tabsToSave = tabsArr.filter(tab => tab.url !== myUrl);
     saveTabs(tabsToSave);
@@ -104,7 +104,7 @@ function saveAllTabs() {
 }
 
 function saveAllButActive() {
-  const myUrl = chrome.extension.getURL('/src/Websync/websync.html');
+  const myUrl = chrome.extension.getURL('/src/websync/websync.html');
   chrome.tabs.query({ currentWindow: true, active: false }, function(tabsArr) {
     const tabsToSave = tabsArr.filter(tab => tab.url !== myUrl);
     saveTabs(tabsToSave);
@@ -124,7 +124,7 @@ function saveActiveTab() {
 }
 
 const openBackgroundPageIfNeeded = done => {
-  const myUrl = chrome.extension.getURL('/src/Websync/websync.html');
+  const myUrl = chrome.extension.getURL('/src/websync/websync.html');
   chrome.tabs.query({ url: myUrl }, function(tabsArr) {
     if (tabsArr.length == 0) {
       chrome.tabs.create({ url: myUrl });
@@ -139,7 +139,7 @@ const openBackgroundPageIfNeeded = done => {
 
 function openBackgroundPage() {
   chrome.tabs.create({
-    url: chrome.extension.getURL('/src/Websync/websync.html'),
+    url: chrome.extension.getURL('/src/websync/websync.html'),
   });
 }
 
