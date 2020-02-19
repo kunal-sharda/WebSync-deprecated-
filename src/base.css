@@ -21,8 +21,9 @@ a {
 
 .logo-background {
   position: fixed;
-  right: 30px;
-  bottom: 30px;
+  pointer-events: none;
+  text-align: center;
+  bottom: -10%;
   opacity: 0.3;
 }
 
