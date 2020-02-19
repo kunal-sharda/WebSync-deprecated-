@@ -2,7 +2,7 @@
 
 **Websync is a fully featured browser/tab manager**
 
-It essentially helps reduce both clutter and cpu usage by saving tabs for later use. It is also a free and open source alternative to Onetab, which we cannot prove the verifiability of. 
+It essentially helps reduce both clutter and CPU usage by saving tabs for later use. It is also a free and open source alternative to Onetab, which we cannot prove the verifiability of. 
 
 Overall, it's especially helpful for professionals, coders, and even the average student who has several windows or tabs open and wishes to save them for futher use. 
 
@@ -26,13 +26,11 @@ Overall, it's especially helpful for professionals, coders, and even the average
 First you must build the JS files:
 
 ```sh
-nvm i   # will use .nvmrc version
-nvm use # will use .nvmrc version
 yarn
 npx webpack
 ```
 
-Then you can load it as an unbundled extension in Chromium to develop. Firefox should also work,but I will be working to make it far more compatible later (FF also doesn't allow unbundled extensions)
+Then you can load it as an unbundled extension in Chromium to develop. Firefox should also work, but I will be working to make it far more compatible later (FF also doesn't allow unbundled extensions)
 
 ## Credits
 
