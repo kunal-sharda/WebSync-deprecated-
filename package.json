@@ -10,6 +10,7 @@
     "pretty-quick": "^1.8.0"
   },
   "dependencies": {
+    "gists": "^2.0.0",
     "jquery": "^3.4.0",
     "mithril": "0.1",
     "moment": "^2.23.0",
