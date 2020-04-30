@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "gists": "^2.0.0",
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "mithril": "0.1",
     "moment": "^2.23.0",
     "webpack": "^4.28.3",
